@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Nunito", sans-serif;
+      }
+      section {
+        background-color: #e5e5e5;
+      }
+      a {
+        text-decoration: none;
+      }
+      .section1 {
+        position: relative;
+        background-color: #e5e5e5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 1rem;
+      }
+      .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+      }
+
+      .heroimg {
+        width: 100%;
+      }
+
+      .section1 h3 {
+        color: #473663;
+        font-size: 3rem;
+      }
+      .section1 p {
+        color: #bb8396;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .partition {
+        height: 60px;
+        background: linear-gradient(
+          90deg,
+          rgba(51, 50, 78, 1) 0%,
+          rgba(100, 92, 127, 1) 41%,
+          rgba(188, 133, 152, 1) 100%
+        );
+      }
+      .section2 {
+        height: 100vh;
+        background-color: #e5e5e5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .section2 .innerDiv {
+        height: 70%;
+        width: 100%;
+        display: flex;
+      }
+      .section2 .innerDiv .imgdiv {
+        flex: 1;
+        position: relative;
+      }
+      .section2 .innerDiv .imgdiv img {
+        width: 100%;
+        height: 130%;
+        object-fit: cover;
+        position: absolute;
+        top: -50px;
+      }
+      .section2 .innerDiv .contentdiv {
+        flex: 2;
+        background-color: #473663;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+      }
+      .section2 .innerDiv .contentdiv p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.6rem;
+      }
+      .section3 .banner {
+        background-image: url("http://mce.yourliveproject.in/wp-content/uploads/2023/09/76515-scaled.webp");
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: #eff1f5;
+        height: 100vh;
+        display: flex;
+        align-items: end;
+        padding: 2rem 3rem;
+      }
+
+      .section3 .banner h4 {
+        font-size: 3rem;
+        color: #2a2a43;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+        padding: 3rem 0;
+      }
+      ul li a {
+        color: #c9849a;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      ul li a i {
+        color: #2a2a43;
+      }
+      .footer {
+        height: 30px;
+        background: linear-gradient(
+          90deg,
+          rgba(51, 50, 78, 1) 0%,
+          rgba(100, 92, 127, 1) 41%,
+          rgba(188, 133, 152, 1) 100%
+        );
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .footer a {
+        color: #fff;
+      }
+
+      @media (max-width: 520px) {
+        .logo {
+          width: 32%;
+        }
+        .section1 h3 {
+          font-size: 2.2rem;
+        }
+        .section1 p {
+          font-size: 1.2rem;
+        }
+        .partition {
+          height: 20px;
+        }
+        .section2 {
+          height: 40vh;
+        }
+        .section2 .innerDiv .imgdiv {
+          flex: 2;
+        }
+        .section2 .innerDiv .imgdiv img {
+          top: -20px;
+        }
+        .section2 .innerDiv .contentdiv p {
+          font-size: 0.8rem;
+        }
+        .section3 .banner {
+          height: 37vh;
+          padding: 10px;
+        }
+        .section3 .banner h4 {
+          font-size: 2rem;
+        }
+        ul li a {
+          font-size: 1.2rem;
+        }
+
+        .footer a {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="section1">
+        <a href="https://acturemedia.com/"> <img
+            src="http://mce.yourliveproject.in/wp-content/uploads/2023/09/logo.webp"
+            alt="logoimg"
+            class="logo"
+          /></a>
+       
+        <img
+          src="http://mce.yourliveproject.in/wp-content/uploads/2023/09/11.webp"
+          alt="heroimg"
+          class="heroimg"
+        />
+        <h3>We are enswype</h3>
+        <p>Swipe right for research</p>
+      </div>
+      <div class="partition"></div>
+      <div class="section2">
+        <div class="innerDiv">
+          <div class="imgdiv">
+            <img
+              src="http://mce.yourliveproject.in/wp-content/uploads/2023/09/ORH9DV1-scaled.webp"
+              alt="mobile"
+            />
+          </div>
+          <div class="contentdiv">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+              iste. Ullam omnis explicabo consectetur error corrupti? Ipsa
+              molestias non eum repellendus error porro facere.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section3">
+        <div class="banner">
+          <h4>Our Services</h4>
+        </div>
+        <div class="listdiv">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-check"></i> Idea Test/Concept Research</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="#"><i class="fa-solid fa-globe"></i> www.enswype.com</a>
+        <a href="#"
+          ><i class="fa-solid fa-envelope"></i> info@imaginedreality.in</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
